@@ -29,18 +29,19 @@
   <body>
 
     <div class="container">
-      <div class="header">
+	    <div class="row">
+		    <div class="col-sm-4">
 
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="Active" ><a href="/">Home</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Atomy 간편신청</h3>
       </div>
- 
+ 		     <div class="col-sm-4">
       <div class="jumbotron">
-        <h1>간편 회원 가입</h1>
+        <h3>간편 회원 가입</h3>
+
 	<form class="form-signin" action="{{ url_for('index') }}" method="post">
         <label for="inputName" class="sr-only">이름 (실명기재)</label>
         <input type="name" name="inputName" id="inputName" class="form-control" placeholder="이름 (실명기재)" required autofocus>
@@ -132,6 +133,8 @@
 
 	
       </form>
+      		</div>
+		     </div>
       </div>
  
        
