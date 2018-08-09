@@ -78,7 +78,7 @@ def signUp():
         
          # validate the received values
         if _address:
-            #sendMail('choigyumin@gmail.com', '엄마메일', msg)
+            sendMail('choigyumin@gmail.com', 'uricom723@nate.com', msg)
             flash("성공적으로 신청되셨습니다.")
             return redirect(url_for('index'))
             # return json.dumps({'html':'<span>All fields good !!</span>'})
